@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = telebot.TeleBot('5887209531:AAEP7xXzLeRh30QsLTlOqzc-fAISKaYwhYQ')
+bot = telebot.TeleBot('')
 
 
 @bot.message_handler(commands=['start'])
@@ -15,7 +15,7 @@ def send_welcome(message):
     # 创建信息
     chat_msg = '风浪越大'
     # 创建按钮
-    button_url = InlineKeyboardButton('官方频道', url='https://t.me/faka8866')
+    button_url = InlineKeyboardButton('官方频道', url='')
     keyboard = [[button_url]]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -28,8 +28,8 @@ def send_welcome(message):
     # 创建信息
     chat_msg = '代理均可点击连接 \n\n代理连接等待10s'
     # 创建按钮
-    button_url = InlineKeyboardButton('官方频道', url='https://t.me/faka8866')
-    button_url_two = InlineKeyboardButton('官方频道', url='https://t.me/faka8866')
+    button_url = InlineKeyboardButton('官方频道', url='')
+    button_url_two = InlineKeyboardButton('官方频道', url='')
     keyboard = [
         [button_url],
         [button_url_two]
